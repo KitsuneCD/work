@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (polyPhaseMerge.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  Fibonacci.cpp
+  FileManager.cpp
+  main.cpp
+  polyPhaseMerge.cpp
+  testsHelper.cpp
+C:\Users\danii\source\repos\Work3\polyPhaseMerge\testsHelper.cpp(5,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
+  polyPhaseMerge.vcxproj -> C:\Users\danii\source\repos\Work3\x64\Debug\Work3.exe
