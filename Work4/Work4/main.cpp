@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <time.h>
 
 using namespace std;
 
@@ -61,12 +62,12 @@ void search(int* a, int size) {
             flag = 1;
             cout << "Index: ";
             cout << i << endl;
-            cout << "Iterations: " << countIterations;
+            cout << "Iterations: " << countIterations << endl;
             break;
         }
     }
     if (flag == 0) {
-        cout << "нет такого номера, выберите другой: ";
+        cout << "нет такого номера, выберите другой: " << endl;
         search(a, size);
     }
 }
@@ -88,11 +89,23 @@ int main() {
     cin >> choice;
 
     if (choice == "1") {
+        unsigned int start_time = clock();
         quickSort(a, size);
+        unsigned int end_time = clock();
+        unsigned int search_time = start_time - end_time;
+        cout << "Time: " << search_time << endl;
     }
     if (choice == "2") {
+        unsigned int start_time = clock();
         reverseSort(a, size);
+        unsigned int end_time = clock();
+        unsigned int search_time = start_time - end_time;
+        cout << "Time: " << search_time << endl;
     }
     cout << "Введите число не выше 100: ";
+    unsigned int start_time = clock();
     search(a, size);
+    unsigned int end_time = clock();
+    unsigned int search_time = start_time - end_time;
+    cout << "Time: " << search_time << endl;
 }
